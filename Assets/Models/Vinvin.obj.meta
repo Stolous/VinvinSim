@@ -11,6 +11,7 @@ ModelImporter:
     2300000: OpenSCAD_Model
     3300000: OpenSCAD_Model
     4300000: OpenSCAD_Model
+    6400000: OpenSCAD_Model
   externalObjects: {}
   materials:
     importMaterials: 1
