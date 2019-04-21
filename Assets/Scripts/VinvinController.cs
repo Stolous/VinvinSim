@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class VinvinController : MonoBehaviour
 {
-
+    public int id;
     public WheelCollider leftWheel, rightWheel;
     public float maxMotorTorque;
+    public bool keyboardControl = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,16 @@ public class VinvinController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float leftTorque = maxMotorTorque * Input.GetAxis("Vertical");
-        float rightTorque = maxMotorTorque * Input.GetAxis("Horizontal");
+        if(keyboardControl) {
+            float leftTorque = maxMotorTorque * Input.GetAxis("Vertical");
+            float rightTorque = maxMotorTorque * Input.GetAxis("Horizontal");
 
+            leftWheel.motorTorque = leftTorque;
+            rightWheel.motorTorque = rightTorque;
+        }
+    }
+
+    public void setTorques(float leftTorque, float rightTorque) {
         leftWheel.motorTorque = leftTorque;
         rightWheel.motorTorque = rightTorque;
     }
