@@ -25,6 +25,16 @@ namespace UniWebServer
         WebServer server;
         Dictionary<string, IWebResource> resources = new Dictionary<string, IWebResource>();
 
+        void Awake()
+        {
+            GameObject[] objs = GameObject.FindGameObjectsWithTag("Server");
+
+            if (objs.Length > 1)
+            {
+                Destroy(this.gameObject);
+            }
+            DontDestroyOnLoad(this.gameObject);
+        }
         void Start()
         {
             if(processRequestsInMainThread)
