@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 42209182}
   - component: {fileID: 42209181}
   - component: {fileID: 42209180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blue Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5ddd3269b0c0253b6fd854d1cea096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialBallTransform: {fileID: 119009094}
+  initialBallTransform: {fileID: 614011273}
   opponentTeamName: Red
 --- !u!65 &42209181
 BoxCollider:
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 119009092}
   - component: {fileID: 119009091}
   - component: {fileID: 119009090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,6 +607,36 @@ Skybox:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 72d0f522ea9598cf08947c0819c2b0d5, type: 2}
+--- !u!1 &614011272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 614011273}
+  m_Layer: 0
+  m_Name: Ball Initial Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &614011273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614011272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &646648281 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 110081158, guid: 7e86e1498fb45b080af9d1b389d8e65c,
@@ -722,7 +752,7 @@ GameObject:
   - component: {fileID: 705988711}
   - component: {fileID: 705988710}
   - component: {fileID: 705988709}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Red Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -741,7 +771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5ddd3269b0c0253b6fd854d1cea096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialBallTransform: {fileID: 119009094}
+  initialBallTransform: {fileID: 614011273}
   opponentTeamName: Blue
 --- !u!65 &705988710
 BoxCollider:
